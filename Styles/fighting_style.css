@@ -7,6 +7,19 @@
     padding: 0;
 }
 
+.header {
+    margin-bottom: 20vh;
+}
+
 input {
     text-align: start;
+}
+
+body {
+    background-image: url("D:/Git/Instagram-profile-fighting/background_img.jpg");
+    background-size: 100vw;
+}
+
+.input_container {
+    display: flex;
 }
