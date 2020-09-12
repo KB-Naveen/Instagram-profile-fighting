@@ -8,11 +8,13 @@
 }
 
 .header {
-    margin-bottom: 20vh;
+    margin-bottom: 75px;
 }
 
 input {
     text-align: start;
+    width: 300px;
+    height: 30px;
 }
 
 body {
@@ -22,4 +24,35 @@ body {
 
 .input_container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.input_container > div {
+    margin: 0 50px 50px 50px;
+}
+
+.input_container div > *{
+    display: block;
+}
+
+.input_container > div > label {
+    text-align: start;
+}
+
+.input_container > div > button {
+    height: 30px;
+    width: 60px;
+    margin: 10px auto 0 auto;
+}
+
+a {
+    font-size: 30px;
+    color: #3C1053FF;
+    text-decoration: none;
+    border: solid #db8baa 4px;
+    background-color: #db8baa;
+    padding: 0 10px;
+    box-shadow: 0 0 30px 3px #841540;
 }
