@@ -14,13 +14,13 @@ async function search(tag){
     if(users.length == 0){
         var p_tag = document.createElement('p')
         p_tag.innerHTML = 'User Not Found'
-        divtag.appendChild(ptag)
+        divtag.appendChild(p_tag)
     }
     else{
         for(var user in users){
             var a_tag = document.createElement('a')
-            a_tag.onclick = 'user_select(this)'
-            a_tag.value = users[user].user.username
+            a_tag.setAttribute('onclick','user_select(this)')
+            a_tag.setAttribute('data-value', users[user].user.username)
             var img_tag = document.createElement('img')
             img_tag.src = users[user].user.profile_pic_url
             var p_div_tag = document.createElement('div')
@@ -40,6 +40,7 @@ async function search(tag){
             
         }
     }
-    document.getElementById('search_result_block'+n).innerHTML = divtag.innerHTML
-
+    var search_result_block = document.getElementById('search_result_block'+n)
+    search_result_block.style.display = 'block'
+    search_result_block.innerHTML = divtag.innerHTML
 };
