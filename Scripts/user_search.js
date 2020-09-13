@@ -1,6 +1,8 @@
 let result;
-document.getElementById('user1').addEventListener('keyup',async function start(){
-    var s_user = this.value
+async function search(tag){
+    var tag_id = tag.getAttribute("id");
+    var n = tag_id.charAt(tag_id.length-1)
+    var s_user = tag.value
     var s_url = "https://www.instagram.com/web/search/topsearch/?context=user&query="+s_user
 
     var result
@@ -38,6 +40,6 @@ document.getElementById('user1').addEventListener('keyup',async function start()
             
         }
     }
-    document.getElementById('search_result_block').innerHTML = divtag.innerHTML
+    document.getElementById('search_result_block'+n).innerHTML = divtag.innerHTML
 
-});
+};

@@ -15,13 +15,14 @@
     <div class="input_container">
         <div class="player_1">
             <label><strong>Player 1:</strong></label>
-            <input id="user1" placeholder="Enter Instagram Username">
-            <div id="search_result_block"></div>
+            <input id="user1" onkeyup="search(this)" placeholder="Enter Instagram Username">
+            <div class="search_result_block" id="search_result_block1"></div>
             <button><strong>LOAD</strong></button>
         </div>
         <div class="player_2">
             <label><strong>Player 2:</strong></label>
-            <input id="user2" placeholder="Enter Instagram Username">
+            <input id="user2" onkeyup="search(this)" placeholder="Enter Instagram Username">
+            <div class="search_result_block" id="search_result_block2"></div>
             <button><strong>LOAD</strong></button>
         </div>
     </div>
