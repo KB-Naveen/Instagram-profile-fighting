@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="D:\Git\Instagram-profile-fighting\Styles\fighting_style.css" rel="stylesheet">
     <link href="D:\Git\Instagram-profile-fighting\Styles\user_search.css" rel="stylesheet">
+    <link href="D:\Git\Instagram-profile-fighting\Styles\user_load_style.css" rel="stylesheet">
     <title>Instagram Profile Fighting</title>
 </head>
 <body>
@@ -13,15 +14,15 @@
         <p>This is a fun game of comparing two instgram users profile</p>
     </div>
     <div class="input_container">
-        <div class="player_1" id="player1">
+        <div id="player1">
             <label><strong>Player 1:</strong></label>
-            <input id="user1" onkeyup="search(this)" placeholder="Enter Instagram Username">
+            <input id="user1" onkeyup="search(this)" placeholder="Enter Instagram Username" autocomplete="off">
             <div class="search_result_block" id="search_result_block1" style="display: none;"></div>
             <button id="btn1" onclick="load_user(this)"><strong>LOAD</strong></button>
         </div>
-        <div class="player_2" id="player2">
+        <div id="player2">
             <label><strong>Player 2:</strong></label>
-            <input id="user2" onkeyup="search(this)" placeholder="Enter Instagram Username">
+            <input id="user2" onkeyup="search(this)" placeholder="Enter Instagram Username" autocomplete="off">
             <div class="search_result_block" id="search_result_block2" style="display: none;"></div>
             <button id="btn2" onclick="load_user(this)"><strong>LOAD</strong></button>
         </div>

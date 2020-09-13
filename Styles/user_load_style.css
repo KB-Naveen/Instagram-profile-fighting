@@ -1,0 +1,10 @@
+.player > p{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.player > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

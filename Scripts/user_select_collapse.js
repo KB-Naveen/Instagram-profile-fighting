@@ -1,6 +1,6 @@
 function user_select(tag){
     var num_tag = tag.parentElement.parentElement
-    var tag_id = num_tag.getAttribute("class");
+    var tag_id = num_tag.getAttribute("id");
     var n = tag_id.charAt(tag_id.length-1)
     var username = tag.getAttribute('data-value')
     var input = document.getElementById('user'+n);
