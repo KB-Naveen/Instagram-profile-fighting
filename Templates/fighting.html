@@ -13,21 +13,22 @@
         <p>This is a fun game of comparing two instgram users profile</p>
     </div>
     <div class="input_container">
-        <div class="player_1">
+        <div class="player_1" id="player1">
             <label><strong>Player 1:</strong></label>
             <input id="user1" onkeyup="search(this)" placeholder="Enter Instagram Username">
             <div class="search_result_block" id="search_result_block1" style="display: none;"></div>
-            <button id="btn1" onclick=""><strong>LOAD</strong></button>
+            <button id="btn1" onclick="load_user(this)"><strong>LOAD</strong></button>
         </div>
-        <div class="player_2">
+        <div class="player_2" id="player2">
             <label><strong>Player 2:</strong></label>
             <input id="user2" onkeyup="search(this)" placeholder="Enter Instagram Username">
             <div class="search_result_block" id="search_result_block2" style="display: none;"></div>
-            <button id="btn2"><strong>LOAD</strong></button>
+            <button id="btn2" onclick="load_user(this)"><strong>LOAD</strong></button>
         </div>
     </div>
     <a>Start fight</a>
     <script src="D:\Git\Instagram-profile-fighting\Scripts\user_search.js"></script>
     <script src="D:\Git\Instagram-profile-fighting\Scripts\user_select_collapse.js"></script>
+    <script src="D:\Git\Instagram-profile-fighting\Scripts\user_load.js"></script>
 </body>
 </html>
