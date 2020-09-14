@@ -57,6 +57,7 @@ body{
     padding: 0 10px;
     box-shadow: 0 0 30px 3px #841540;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .reset_btn {
