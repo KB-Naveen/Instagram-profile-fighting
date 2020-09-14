@@ -48,7 +48,7 @@ body{
     margin: 10px auto 0 auto;
 }
 
-a {
+#start_fight_btn {
     font-size: 30px;
     color: #3C1053FF;
     text-decoration: none;
@@ -56,4 +56,9 @@ a {
     background-color: #db8baa;
     padding: 0 10px;
     box-shadow: 0 0 30px 3px #841540;
+    margin-bottom: 30px;
+}
+
+.reset_btn {
+    margin-bottom: 10px;
 }

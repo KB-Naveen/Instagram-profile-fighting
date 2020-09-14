@@ -10,6 +10,8 @@ async function load_user(tag){
     var div_tag = document.createElement('div')
     var player_tag = document.createElement('p')
     player_tag.innerText = 'Player '+n
+    player_tag.setAttribute('id','player_info'+n)
+    player_tag.setAttribute('data-value', result.graphql.user.username)
     var img_tag = document.createElement('img')
     img_tag.src = result.graphql.user.profile_pic_url_hd
     var p_tag = document.createElement('p')
@@ -23,3 +25,4 @@ async function load_user(tag){
     player_div.className = 'player'
     player_div.innerHTML = div_tag.innerHTML
 }
+
