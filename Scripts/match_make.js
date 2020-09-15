@@ -17,7 +17,7 @@ async function match_make() {
         var total_score = document.createElement('p')
 
         username_tag.innerHTML = result.graphql.user.username
-        img_tag.setAttribute('src',result.graphql.user.profile_pic_url)
+        img_tag.setAttribute('src',result.graphql.user.profile_pic_url_hd)
         posts_count.innerHTML = 'Number of posts : ' + formatObj.format(result.graphql.user.edge_owner_to_timeline_media.count)
         follow_count.innerHTML = 'Following : ' + formatObj.format(result.graphql.user.edge_follow.count)
         followed_by_count.innerHTML = 'Followers : ' + formatObj.format(result.graphql.user.edge_followed_by.count)
