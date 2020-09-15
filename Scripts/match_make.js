@@ -1,10 +1,16 @@
 async function match_make() {
+    var username = [document.getElementById('player_info1').getAttribute('data-value'),document.getElementById('player_info2').getAttribute('data-value')]
     var player_score_container = document.createElement('div')
     formatObj = new Intl.NumberFormat('en-US')
+    var input_container = document.getElementById("input_container")
+    var load_anime = document.createElement('img')
+    load_anime.setAttribute('src','/Instagram-profile-fighting/images/load_anime.svg')
+    var load_anime_div = document.createElement('div')
+    load_anime_div.appendChild(load_anime)
+    input_container.innerHTML = load_anime_div.innerHTML
 
-    for(var i=1;i<3;i++){
-        var username = document.getElementById('player_info'+i).getAttribute('data-value')
-        var s_url = "https://www.instagram.com/"+username+"/?__a=1"
+    for(var i=0;i<2;i++){
+        var s_url = "https://www.instagram.com/"+username[i]+"/?__a=1"
         var result
         await fetch(s_url).then(response => response.json()).then(data => result=data);
 
@@ -32,5 +38,5 @@ async function match_make() {
 
         player_score_container.appendChild(player_div_tag)
     }
-    document.getElementById("input_container").innerHTML = player_score_container.innerHTML
+    input_container.innerHTML = player_score_container.innerHTML
 }
