@@ -1,5 +1,6 @@
 async function match_make() {
     var player_score_container = document.createElement('div')
+    formatObj = new Intl.NumberFormat('en-US')
 
     for(var i=1;i<3;i++){
         var username = document.getElementById('player_info'+i).getAttribute('data-value')
@@ -17,10 +18,10 @@ async function match_make() {
 
         username_tag.innerHTML = result.graphql.user.username
         img_tag.setAttribute('src',result.graphql.user.profile_pic_url)
-        posts_count.innerHTML = 'Number of posts : ' + result.graphql.user.edge_owner_to_timeline_media.count
-        follow_count.innerHTML = 'Following : ' + result.graphql.user.edge_follow.count
-        followed_by_count.innerHTML = 'Followers : ' + result.graphql.user.edge_followed_by.count
-        total_score.innerHTML = 'Total Score' + result.graphql.user.edge_owner_to_timeline_media.count+result.graphql.user.edge_follow.count+result.graphql.user.edge_followed_by.count
+        posts_count.innerHTML = 'Number of posts : ' + formatObj.format(result.graphql.user.edge_owner_to_timeline_media.count)
+        follow_count.innerHTML = 'Following : ' + formatObj.format(result.graphql.user.edge_follow.count)
+        followed_by_count.innerHTML = 'Followers : ' + formatObj.format(result.graphql.user.edge_followed_by.count)
+        total_score.innerHTML = 'Total Score : ' + formatObj.format((result.graphql.user.edge_owner_to_timeline_media.count+result.graphql.user.edge_follow.count+result.graphql.user.edge_followed_by.count))
 
         player_div_tag.appendChild(username_tag)
         player_div_tag.appendChild(img_tag)

@@ -16,12 +16,16 @@ window.addEventListener('mouseup', function(event){
 
     var tag2_1 = document.getElementById('search_result_block2');
     var tag2_2 = document.getElementById('user2');
-
-    if(event.target != tag1_2){
-        tag1_1.style.display = 'none';
+    
+    if(tag1_1){
+        if(event.target != tag1_2){
+            tag1_1.style.display = 'none';
+        }
     }
 
-    if(event.target != tag2_2){
-        tag2_1.style.display = 'none';
+    if(tag2_1){
+        if(event.target != tag2_2){
+            tag2_1.style.display = 'none';
+        }
     }
 });
