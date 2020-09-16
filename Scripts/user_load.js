@@ -1,4 +1,5 @@
 async function load_user(tag){
+    tag.innerText = "Loading..."
     var tag_id = tag.getAttribute("id");
     var n = tag_id.charAt(tag_id.length-1)
     var username = document.getElementById('user'+n).value
