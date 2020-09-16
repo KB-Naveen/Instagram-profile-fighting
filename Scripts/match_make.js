@@ -18,9 +18,13 @@ async function match_make(tag) {
         var username_tag = document.createElement('p')
         var img_tag = document.createElement('img')
         var posts_count = document.createElement('p')
+        posts_count.style.textAlign = 'left'
         var follow_count = document.createElement('p')
+        follow_count.style.textAlign = 'left'
         var followed_by_count = document.createElement('p')
+        followed_by_count.style.textAlign = 'left'
         var total_score = document.createElement('p')
+        total_score.style.textAlign = 'left'
 
         username_tag.innerHTML = result.graphql.user.username
         img_tag.setAttribute('src',result.graphql.user.profile_pic_url_hd)
@@ -40,6 +44,6 @@ async function match_make(tag) {
     }
     input_container.innerHTML = player_score_container.innerHTML
     input_container.style.marginBottom = 0
-    
+
     tag.innerHTML = "Share this Fight"
 }
