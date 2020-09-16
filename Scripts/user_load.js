@@ -28,6 +28,6 @@ async function load_user(tag){
 
     if(document.getElementById('player_info1') && document.getElementById('player_info2')){
         var fight_btn = document.getElementById('start_fight_btn')
-        fight_btn.setAttribute('onclick', 'match_make()')
+        fight_btn.setAttribute('onclick', 'match_make(this)')
     }
 }

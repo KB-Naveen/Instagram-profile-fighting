@@ -1,4 +1,4 @@
-async function match_make() {
+async function match_make(tag) {
     var username = [document.getElementById('player_info1').getAttribute('data-value'),document.getElementById('player_info2').getAttribute('data-value')]
     var player_score_container = document.createElement('div')
     formatObj = new Intl.NumberFormat('en-US')
@@ -39,4 +39,7 @@ async function match_make() {
         player_score_container.appendChild(player_div_tag)
     }
     input_container.innerHTML = player_score_container.innerHTML
+    input_container.style.marginBottom = 0
+    
+    tag.innerHTML = "Share this Fight"
 }
