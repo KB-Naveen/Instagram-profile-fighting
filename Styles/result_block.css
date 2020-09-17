@@ -1,7 +1,11 @@
-.input_container > div > img {
+.profile_pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+.input_container > div > img {
+    margin: 0 auto;
 }
 
 .input_container > div > p {
