@@ -50,7 +50,7 @@ async function match_make(tag) {
     input_container.style.marginBottom = 0
 
     var badge = document.createElement('img')
-    badge.setAttribute('src','D:/Git/Instagram-profile-fighting/images/badge.png')
+    badge.setAttribute('src','/Instagram-profile-fighting/images/badge.png')
     badge.style.width = "200px"
 
     if(t_score[0]>t_score[1]){
