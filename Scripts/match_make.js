@@ -61,4 +61,5 @@ async function match_make(tag) {
     }
 
     tag.innerHTML = "Download this Fight"
+    tag.setAttribute('onclick','save_fight()')
 }
