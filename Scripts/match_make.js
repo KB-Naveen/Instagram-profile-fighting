@@ -60,6 +60,5 @@ async function match_make(tag) {
         document.getElementById('player2').appendChild(badge)
     }
 
-    tag.innerHTML = "Download this Fight"
-    tag.setAttribute('onclick','save_fight()')
+    tag.remove();
 }
