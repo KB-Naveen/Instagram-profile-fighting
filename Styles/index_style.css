@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("/Instagram-profile-fighting/images/background_img.jpg");
+    background-image: url("/Instagram-profile-fighting/images/background_img_desktop.jpg");
     background-size: 100vw;
 }
 
@@ -24,4 +24,11 @@ a {
     background-color: #db8baa;
     padding: 0 10px;
     box-shadow: 0 0 30px 3px #841540;
+}
+
+@media all and (max-width: 500px){
+    body {
+        background-image: url("/Instagram-profile-fighting/images/background_img_mobile.jpg");
+        background-size: 100vw;
+    }
 }

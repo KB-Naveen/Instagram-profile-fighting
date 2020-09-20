@@ -19,7 +19,7 @@ input {
 }
 
 body{
-    background-image: url("/Instagram-profile-fighting/images/background_img.jpg");
+    background-image: url("/Instagram-profile-fighting/images/background_img_desktop.jpg");
     background-size: 100vw;
 }
 
@@ -62,4 +62,11 @@ body{
 
 .reset_btn {
     margin-bottom: 10px;
+}
+
+@media all and (max-width: 500px){
+    body{
+        background-image: url("/Instagram-profile-fighting/images/background_img_mobile.jpg");
+        background-size: 100vw;
+    }
 }
