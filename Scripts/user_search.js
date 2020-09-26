@@ -32,7 +32,7 @@ async function search(tag){
             p2.className = 'full_name'
             if(users[user].user.is_verified){
                 var veri_img = document.createElement('img')
-                veri_img.setAttribute('src','/Instagram-profile-fighting/images/badge.png')
+                veri_img.setAttribute('src','/Instagram-profile-fighting/images/verification-badge.png')
                 veri_img.style.width = '20px'
                 veri_img.style.height = '20px'
                 p1.appendChild(veri_img)
